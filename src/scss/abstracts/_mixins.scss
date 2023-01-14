@@ -1,0 +1,7 @@
+@use "variables.scss" as v;
+
+@mixin mq($bp) {
+	@media #{map-get(v.$breakpoint, $bp)} {
+		@content;
+	}
+}

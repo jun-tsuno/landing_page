@@ -1,0 +1,128 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.menu {
+	color: v.$color-text-secondary;
+	position: fixed;
+	width: 100%;
+	padding: 1rem;
+	padding-top: 1.5rem;
+	display: flex;
+	z-index: 2;
+
+	@include m.mq(lg) {
+		display: inherit;
+	}
+
+	&_btn {
+		width: 2rem;
+		margin-left: auto;
+		margin-right: 2rem;
+	}
+}
+
+.menu_btn {
+	position: relative;
+	cursor: pointer;
+
+	@include m.mq(lg) {
+		display: none;
+	}
+
+	& i {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 2.2rem;
+	}
+
+	&_open {
+		opacity: 1;
+	}
+
+	&_close {
+		opacity: 0;
+	}
+}
+
+.nav {
+	background-color: v.$bg-color;
+	text-align: center;
+	position: fixed;
+	transform: translateX(100%);
+	width: 100vw;
+	height: 100vh;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+
+	@include m.mq(lg) {
+		background-color: inherit;
+		position: absolute;
+		width: inherit;
+		height: inherit;
+		transform: inherit;
+		transition: none;
+		z-index: 2;
+	}
+
+	&.open {
+		transform: translateX(0);
+	}
+
+	&_container {
+		color: v.$color-text-secondary;
+		position: absolute;
+		top: 50%;
+		right: 50%;
+		transform: translate(50%, -50%);
+
+		@include m.mq(lg) {
+			display: flex;
+			justify-content: end;
+			top: inherit;
+			right: 0;
+			transform: inherit;
+
+			padding: 2rem 1.2rem 0 0;
+			width: 60%;
+		}
+	}
+
+	&_list {
+		@include m.mq(lg) {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		&_item {
+			cursor: pointer;
+			margin-bottom: 1.5rem;
+
+			@include m.mq(lg) {
+				padding: 0 1.2rem;
+			}
+
+			& a {
+				color: v.$color-text-secondary;
+
+				&:hover {
+					color: v.$color-accent;
+				}
+			}
+		}
+	}
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+
+	&_item {
+		margin: 0 1rem;
+		font-size: 1.5rem;
+
+		&:hover {
+			color: v.$color-accent;
+		}
+	}
+}

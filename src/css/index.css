@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+body {
+  font-size: 1.3rem;
+}
+
+.menu {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  display: flex;
+  z-index: 2;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: inherit;
+  }
+}
+.menu_btn {
+  width: 2rem;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.menu_btn {
+  position: relative;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .menu_btn {
+    display: none;
+  }
+}
+.menu_btn i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.2rem;
+}
+.menu_btn_open {
+  opacity: 1;
+}
+.menu_btn_close {
+  opacity: 0;
+}
+
+.nav {
+  background-color: rgba(64, 63, 63, 0.75);
+  text-align: center;
+  position: fixed;
+  transform: translateX(100%);
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .nav {
+    background-color: inherit;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    transform: inherit;
+    transition: none;
+    z-index: 2;
+  }
+}
+.nav.open {
+  transform: translateX(0);
+}
+.nav_container {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+@media screen and (min-width: 1024px) {
+  .nav_container {
+    display: flex;
+    justify-content: end;
+    top: inherit;
+    right: 0;
+    transform: inherit;
+    padding: 2rem 1.2rem 0 0;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav_list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.nav_list_item {
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .nav_list_item {
+    padding: 0 1.2rem;
+  }
+}
+.nav_list_item a {
+  color: rgb(255, 255, 255);
+}
+.nav_list_item a:hover {
+  color: rgb(243, 184, 0);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social_item {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+.social_item:hover {
+  color: rgb(243, 184, 0);
+}
+
+.header {
+  width: 100%;
+}
+.header a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header_video {
+  height: 100%;
+}
+.header_video_title {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 45%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 100%;
+}
+.header_video_title h1 {
+  margin: 0 1.5rem;
+  font-family: "Anton", sans-serif;
+}
+.header_video_title span {
+  color: rgb(243, 184, 0);
+}
+.header_video_title hr {
+  border-top: 1px solid white;
+  width: 95%;
+}
+.header_video_title p {
+  margin: 0 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.header video {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  filter: brightness(40%);
+  animation: fadeIn 3s ease 1s 1 normal backwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

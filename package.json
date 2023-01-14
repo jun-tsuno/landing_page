@@ -1,0 +1,15 @@
+{
+	"name": "web1_final",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass src/scss:src/css -w"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.57.1"
+	}
+}

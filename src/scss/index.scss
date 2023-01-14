@@ -1,0 +1,8 @@
+@forward "./abstracts/";
+@forward "./components/";
+@forward "./layout.scss/_index.scss";
+
+body {
+	margin: 0;
+	padding: 0;
+}

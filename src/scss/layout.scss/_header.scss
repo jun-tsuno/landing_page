@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/typography" as t;
+
+.header {
+	width: 100%;
+	a {
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&_video {
+		height: 100%;
+
+		&_title {
+			position: absolute;
+			color: v.$color-text-secondary;
+			top: 45%;
+			right: 50%;
+			transform: translate(50%, -50%);
+			width: 100%;
+
+			& h1 {
+				margin: 0 1.5rem;
+				font-family: t.$font-title;
+			}
+
+			& span {
+				color: v.$color-accent;
+			}
+
+			& hr {
+				border-top: 1px solid white;
+				width: 95%;
+			}
+
+			& p {
+				margin: 0 1.5rem;
+				font-family: t.$font-sub;
+			}
+		}
+	}
+
+	video {
+		position: absolute;
+		top: 0;
+		object-fit: cover;
+		height: 100vh;
+		width: 100%;
+		filter: brightness(40%);
+		animation: fadeIn 3s ease 1s 1 normal backwards;
+	}
+	@keyframes fadeIn {
+		from {
+			opacity: 0.5;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}
