@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as v;
+
+.features {
+	width: 90%;
+	margin: 0 auto;
+	padding: 4rem 0;
+	text-align: center;
+}
+
+.cards {
+	padding-top: 1rem;
+
+	&_item {
+		padding: 0.7rem 0;
+
+		& a {
+			font-size: 3.3rem;
+			color: v.$color-primary;
+		}
+	}
+}

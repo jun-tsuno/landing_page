@@ -1,8 +1,9 @@
 @use "../abstracts/variables" as v;
-@use "../abstracts/typography" as t;
 
 .header {
 	width: 100%;
+	height: 100vh;
+
 	a {
 		text-decoration: none;
 		cursor: pointer;
@@ -27,11 +28,10 @@
 
 			& h1 {
 				margin: 0 1.5rem;
-				font-family: t.$font-title;
 			}
 
 			& span {
-				color: v.$color-accent;
+				color: v.$color-primary;
 			}
 
 			& hr {
@@ -41,7 +41,11 @@
 
 			& p {
 				margin: 0 1.5rem;
-				font-family: t.$font-sub;
+			}
+
+			& button {
+				font-size: 1.2rem;
+				margin: 2rem 1.5rem;
 			}
 		}
 	}
