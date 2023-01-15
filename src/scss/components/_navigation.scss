@@ -9,7 +9,7 @@
 	padding-top: 1.5rem;
 	display: flex;
 	z-index: 2;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: v.$bg-primary;
 
 	@include m.mq(lg) {
 		display: inherit;
@@ -47,7 +47,7 @@
 }
 
 .nav {
-	background-color: v.$bg-color;
+	background-color: v.$bg-primary;
 	text-align: center;
 	position: fixed;
 	transform: translateX(100%);
@@ -58,8 +58,7 @@
 
 	@include m.mq(lg) {
 		background-color: inherit;
-		position: absolute;
-		width: inherit;
+		position: fixed;
 		height: inherit;
 		transform: inherit;
 		transition: none;
@@ -83,9 +82,9 @@
 			top: inherit;
 			right: 0;
 			transform: inherit;
-
-			padding: 2rem 1.2rem 0 0;
+			padding: 1.5rem 1.2rem 0 0;
 			width: 60%;
+			z-index: 10;
 		}
 	}
 
@@ -101,6 +100,8 @@
 
 			@include m.mq(lg) {
 				padding: 0 1.2rem;
+				margin-bottom: 0;
+				align-self: center;
 			}
 
 			& a {

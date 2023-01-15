@@ -4,12 +4,14 @@
 .features {
 	width: 90%;
 	margin: 0 auto;
-	padding-top: 4rem;
+	margin-top: 4rem;
 	text-align: center;
 
+	@include m.mq(md) {
+		margin-top: 7rem;
+	}
+
 	& h2 {
-		background: linear-gradient(transparent 50%, v.$color-accent 50%);
-		display: inline-block;
 		margin-bottom: 2rem;
 	}
 }

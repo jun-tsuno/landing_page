@@ -1,19 +1,71 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
 .products {
 	background-color: v.$bg-secondary;
+	margin-top: 4rem;
+	padding-top: 2rem;
+	text-align: center;
+
+	@include m.mq(md) {
+		margin-top: 7rem;
+	}
 
 	&_list {
+		display: flex;
+		overflow: auto;
+		list-style: none;
+		padding: 2rem 0;
+		max-width: 1200px;
+		margin: 0 auto;
+
 		&_item {
-			width: 90%;
 			margin: 0 auto;
 			text-align: center;
+			width: 20%;
+			min-width: 180px;
+			max-width: 240px;
+			position: relative;
 
-			img {
-				width: 70%;
-				height: 70%;
+			& img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 				object-fit: cover;
+				width: 60%;
+				height: auto;
+				max-height: 300px;
+			}
+
+			span {
+				position: absolute;
+				top: 13%;
+				right: 10%;
+				background-color: v.$color-secondary;
+				color: v.$color-text-secondary;
+				padding: 0.2rem 0.7rem;
+				border: 1px solid;
+
+				font-weight: bold;
 			}
 		}
 	}
+
+	&_img_container {
+		padding-top: 100%;
+		position: relative;
+	}
+
+	& button {
+		color: v.$color-text-primary;
+		border-color: v.$color-text-primary;
+		font-size: 1rem;
+		margin-bottom: 2rem;
+	}
+}
+
+.original_price {
+	color: v.$color-secondary;
+	text-decoration: line-through;
 }

@@ -28,6 +28,8 @@ h2 {
 	font-family: $font-sub;
 	font-weight: 700;
 	margin: 0;
+	background: linear-gradient(transparent 50%, v.$color-accent 50%);
+	display: inline-block;
 }
 
 h3 {
