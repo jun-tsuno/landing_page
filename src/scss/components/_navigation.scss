@@ -9,6 +9,7 @@
 	padding-top: 1.5rem;
 	display: flex;
 	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.5);
 
 	@include m.mq(lg) {
 		display: inherit;

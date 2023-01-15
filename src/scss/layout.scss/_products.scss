@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as v;
+
+.products {
+	background-color: v.$bg-secondary;
+
+	&_list {
+		&_item {
+			width: 90%;
+			margin: 0 auto;
+			text-align: center;
+
+			img {
+				width: 70%;
+				height: 70%;
+				object-fit: cover;
+			}
+		}
+	}
+}

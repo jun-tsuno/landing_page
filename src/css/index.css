@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap");
 body {
-  font-size: 1.2rem;
-  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  font-family: "Prompt", sans-serif;
 }
 
 p {
   margin: 0;
+  color: rgb(111, 111, 111);
 }
 
 h1 {
@@ -18,11 +19,15 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
   margin: 0;
 }
 
 h3 {
+  font-size: 1.2rem;
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -34,6 +39,7 @@ h3 {
   padding-top: 1.5rem;
   display: flex;
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 1024px) {
   .menu {
@@ -129,7 +135,7 @@ h3 {
   color: rgb(255, 255, 255);
 }
 .nav_list_item a:hover {
-  color: rgb(243, 184, 0);
+  color: rgba(243, 182, 0, 0.616);
 }
 
 .social {
@@ -141,7 +147,7 @@ h3 {
   font-size: 1.5rem;
 }
 .social_item:hover {
-  color: rgb(243, 184, 0);
+  color: rgba(243, 182, 0, 0.616);
 }
 
 button {
@@ -210,6 +216,7 @@ button:hover::before {
 }
 .header_video_title p {
   margin: 0 1.5rem;
+  color: rgb(255, 255, 255);
 }
 .header_video_title button {
   font-size: 1.2rem;
@@ -236,19 +243,54 @@ button:hover::before {
 .features {
   width: 90%;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding-top: 4rem;
   text-align: center;
+}
+.features h2 {
+  background: linear-gradient(transparent 50%, rgba(243, 182, 0, 0.616) 50%);
+  display: inline-block;
+  margin-bottom: 2rem;
 }
 
 .cards {
-  padding-top: 1rem;
+  padding: 1rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem 0;
+  }
 }
 .cards_item {
-  padding: 0.7rem 0;
+  padding: 1.5rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .cards_item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 .cards_item a {
   font-size: 3.3rem;
   color: rgba(15, 162, 51, 0.906);
+}
+.cards_item a i {
+  padding: 1.5rem;
+}
+
+.products {
+  background-color: rgba(243, 243, 243, 0.648);
+}
+.products_list_item {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.products_list_item img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
 }
 
 body {

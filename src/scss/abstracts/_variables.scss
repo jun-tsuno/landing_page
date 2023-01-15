@@ -1,12 +1,13 @@
 $color-text-primary: rgb(39, 39, 39);
 $color-text-secondary: rgb(255, 255, 255);
+$color-text-paragraph: rgb(111, 111, 111);
 
 $color-primary: rgba(15, 162, 51, 0.906);
-// $color-primary: rgba(79, 129, 4, 0.65);
 $color-secondary: rgb(219, 130, 0);
-$color-accent: rgb(243, 184, 0);
+$color-accent: rgba(243, 182, 0, 0.616);
 
 $bg-color: rgba(64, 63, 63, 0.75);
+$bg-secondary: rgba(243, 243, 243, 0.648);
 
 $breakpoint: (
 	sm: "screen and (min-width: 640px)",
