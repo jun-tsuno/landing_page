@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.testimonials {
+	margin-top: 4rem;
+	text-align: center;
+
+	&_cards {
+		padding-top: 1.5rem;
+		@include m.mq(md) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			max-width: 1100px;
+			margin: 0 auto;
+		}
+
+		&_card {
+			text-align: center;
+			width: 80%;
+			max-width: 25rem;
+			height: 50%;
+			margin: 3rem auto;
+			padding: 3rem 1rem 0.8rem 1rem;
+			background-color: v.$bg-secondary;
+			border-radius: 0.5rem;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		& .quote {
+			display: inline-block;
+			border: 1px solid v.$color-primary;
+			border-radius: 100%;
+			background-color: v.$color-primary;
+			padding: 0.8rem;
+			position: absolute;
+			top: -2.2rem;
+			left: 50%;
+			transform: translateX(-50%);
+
+			& i {
+				font-size: 2.5rem;
+				color: white;
+			}
+		}
+
+		& cite {
+			display: inline-block;
+			color: v.$color-text-paragraph;
+			margin-top: auto;
+
+			&::before {
+				content: "--";
+				letter-spacing: -0.1rem;
+				margin-right: 0.5rem;
+			}
+		}
+	}
+}
