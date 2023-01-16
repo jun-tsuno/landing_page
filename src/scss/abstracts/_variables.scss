@@ -7,11 +7,22 @@ $color-secondary: rgb(219, 130, 0);
 $color-accent: rgba(243, 182, 0, 0.616);
 
 $bg-primary: rgba(64, 63, 63, 0.75);
-$bg-secondary: rgba(243, 243, 243, 0.648);
+$bg-secondary: rgba(230, 229, 229, 0.65);
 
 $breakpoint: (
 	sm: "screen and (min-width: 640px)",
 	md: "screen and (min-width: 768px)",
 	lg: "screen and (min-width: 1024px)",
 	xl: "screen and (min-width: 1280px)",
+);
+
+$logo-list: (
+	1: url(https://user-images.githubusercontent.com/110567844/212572738-44b0749c-c3f2-4f6b-a31e-c9f47ca9fd2c.png),
+	2: url(https://user-images.githubusercontent.com/110567844/212572813-cb802bb4-2747-4759-a352-5797cd849c53.png),
+	3: url(https://user-images.githubusercontent.com/110567844/212572824-8f6e61a8-5067-4d15-b62e-d70229a0870d.png),
+	4: url(https://user-images.githubusercontent.com/110567844/212574266-2ffce2ce-44e0-41f4-b6c9-cb99406c5987.png),
+	5: url(https://user-images.githubusercontent.com/110567844/212574158-12be6591-e512-4248-8113-a280e614c17d.png),
+	6: url(https://user-images.githubusercontent.com/110567844/212573027-6a0b337b-9ba5-4938-a194-265170b2650b.png),
+	7: url(https://user-images.githubusercontent.com/110567844/212573110-faba6bdf-3bd6-4606-8473-b080e06ece4e.png),
+	8: url(https://user-images.githubusercontent.com/110567844/212574400-ce12bd31-d867-4249-8a59-fafde7b48daf.png),
 );

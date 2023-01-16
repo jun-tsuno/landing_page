@@ -5,3 +5,18 @@
 		@content;
 	}
 }
+
+@mixin flexLayout {
+	display: flex;
+	overflow: auto;
+	padding-bottom: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@mixin logoLayout($logoNum) {
+	background: #{map-get(v.$logo-list, $logoNum)};
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 65% auto;
+}

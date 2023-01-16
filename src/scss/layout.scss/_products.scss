@@ -12,12 +12,8 @@
 	}
 
 	&_list {
-		display: flex;
-		overflow: auto;
+		@include m.flexLayout;
 		list-style: none;
-		padding: 2rem 0;
-		max-width: 1200px;
-		margin: 0 auto;
 
 		&_item {
 			margin: 0 auto;
