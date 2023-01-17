@@ -1,8 +1,10 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/wave" as w;
 
 .header {
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
+	z-index: 1;
 
 	a {
 		text-decoration: none;
@@ -55,10 +57,11 @@
 		position: absolute;
 		top: 0;
 		object-fit: cover;
-		height: 100vh;
+		height: 80vh;
 		width: 100%;
 		filter: brightness(40%);
 		animation: fadeIn 3s ease 1s 1 normal backwards;
+		clip-path: w.$wave-header;
 	}
 	@keyframes fadeIn {
 		from {
