@@ -2,13 +2,25 @@
 @use "../abstracts/mixins" as m;
 
 .products {
-	background-color: v.$bg-secondary;
-	margin-top: 4rem;
-	padding-top: 2rem;
+	background-color: v.$color-primary;
+	margin-top: 3.3rem;
 	text-align: center;
+	position: relative;
+
+	&::before {
+		@include m.wave-before(v.$color-primary);
+	}
+
+	&::after {
+		@include m.wave-after(v.$color-primary);
+	}
 
 	@include m.mq(md) {
-		margin-top: 7rem;
+		margin-top: 5rem;
+	}
+
+	& p {
+		color: v.$color-text-primary;
 	}
 
 	&_list {
@@ -42,7 +54,6 @@
 				color: v.$color-text-secondary;
 				padding: 0.2rem 0.7rem;
 				border: 1px solid;
-
 				font-weight: bold;
 			}
 		}
@@ -60,9 +71,9 @@
 		margin-bottom: 2rem;
 		width: 8rem;
 	}
-}
 
-.original_price {
-	color: v.$color-secondary;
-	text-decoration: line-through;
+	.original_price {
+		font-weight: bold;
+		text-decoration: line-through;
+	}
 }

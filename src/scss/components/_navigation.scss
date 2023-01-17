@@ -108,7 +108,9 @@
 				color: v.$color-text-secondary;
 
 				&:hover {
-					color: v.$color-accent;
+					color: v.$color-primary;
+					display: inline-block;
+					transform: scale(1.2);
 				}
 			}
 		}
@@ -124,7 +126,9 @@
 		font-size: 1.5rem;
 
 		&:hover {
-			color: v.$color-accent;
+			color: v.$color-primary;
+			display: inline-block;
+			transform: scale(1.3);
 		}
 	}
 }
