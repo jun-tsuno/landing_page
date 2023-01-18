@@ -1,0 +1,20 @@
+.fade-up {
+	opacity: 0;
+	transform: translateY(30%);
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(30%);
+}
+
+.huwa {
+	animation: huwa 1.5s ease-out forwards;
+}
+
+@keyframes huwa {
+	to {
+		opacity: 1;
+		transform: initial;
+	}
+}

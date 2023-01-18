@@ -25,6 +25,7 @@ button {
 	&:hover {
 		color: v.$color-text-secondary;
 		border-color: v.$color-primary;
+		transform: scale(1.1);
 
 		&::before {
 			transform-origin: 0% 50%;

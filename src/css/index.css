@@ -16,6 +16,11 @@ h1 {
   font-family: "Anton", sans-serif;
   margin: 0;
 }
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
 
 h2 {
   font-size: 1.5rem;
@@ -33,6 +38,26 @@ h3 {
   margin: 0;
 }
 
+.fade-up {
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+.huwa {
+  animation: huwa 1.5s ease-out forwards;
+}
+
+@keyframes huwa {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
 .menu {
   color: rgb(255, 255, 255);
   position: fixed;
@@ -187,6 +212,7 @@ button::before {
 button:hover {
   color: rgb(255, 255, 255);
   border-color: rgb(146, 200, 77);
+  transform: scale(1.1);
 }
 button:hover::before {
   transform-origin: 0% 50%;
