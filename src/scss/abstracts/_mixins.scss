@@ -15,8 +15,8 @@
 	margin: 0 auto;
 }
 
-@mixin logoLayout($logoNum) {
-	background: #{map-get(v.$logo-list, $logoNum)};
+@mixin imageLayout($list, $imgNum) {
+	background: #{map-get($list, $imgNum)};
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 65% auto;

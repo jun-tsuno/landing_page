@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as v;
+
+input,
+textarea {
+	border: 0.1rem solid v.$color-text-paragraph;
+	border-radius: 0.3rem;
+	padding: 1rem;
+}

@@ -20,6 +20,14 @@
 		margin-left: auto;
 		margin-right: 2rem;
 	}
+
+	&_logo {
+		& img {
+			width: 10%;
+			min-width: 7rem;
+			max-width: 9rem;
+		}
+	}
 }
 
 .menu_btn {

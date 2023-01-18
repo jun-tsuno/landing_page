@@ -1,0 +1,100 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.footer {
+	position: relative;
+	background-color: v.$color-primary;
+	margin-top: 5rem;
+	text-align: center;
+
+	&::before {
+		@include m.wave-before(v.$color-primary);
+	}
+
+	& h2 {
+		margin-bottom: 1rem;
+	}
+
+	& li {
+		font-size: 1.2rem;
+	}
+}
+
+.contact {
+	@include m.mq(md) {
+		display: flex;
+		padding-top: 3rem;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	&_about {
+		list-style: none;
+		padding-left: 0;
+		padding-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		margin: 0 auto;
+		text-align: start;
+
+		@include m.mq(md) {
+			width: 50%;
+			max-width: 15rem;
+		}
+
+		& i {
+			padding-right: 1rem;
+		}
+	}
+
+	&_form {
+		padding: 1rem 0;
+		width: 95%;
+		margin: 0 auto;
+
+		@include m.mq(md) {
+			width: 50%;
+			max-width: 42rem;
+		}
+		& form {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			min-width: 17rem;
+			margin: 0 auto;
+		}
+
+		& button {
+			color: black;
+			border-color: black;
+			width: 50%;
+			align-self: center;
+			margin-top: 1rem;
+		}
+	}
+}
+
+.adr {
+	display: flex;
+}
+
+.footer_social {
+	padding-top: 1rem;
+
+	& a {
+		text-decoration: none;
+		color: v.$color-text-primary;
+		font-size: 2rem;
+
+		&:hover {
+			display: inline-block;
+			transform: scale(1.3);
+		}
+	}
+}
+
+.copy {
+	color: white;
+	padding: 1rem;
+}

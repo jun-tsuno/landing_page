@@ -12,7 +12,7 @@ p {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Anton", sans-serif;
   margin: 0;
 }
@@ -52,6 +52,11 @@ h3 {
   width: 2rem;
   margin-left: auto;
   margin-right: 2rem;
+}
+.menu_logo img {
+  width: 10%;
+  min-width: 7rem;
+  max-width: 9rem;
 }
 
 .menu_btn {
@@ -186,6 +191,13 @@ button:hover {
 button:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
+}
+
+input,
+textarea {
+  border: 0.1rem solid rgb(111, 111, 111);
+  border-radius: 0.3rem;
+  padding: 1rem;
 }
 
 .header {
@@ -537,6 +549,206 @@ button:hover::before {
   content: "--";
   letter-spacing: -0.1rem;
   margin-right: 0.5rem;
+}
+
+.act {
+  width: 90%;
+  margin: 3.3rem auto;
+  text-align: center;
+}
+.act a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.act ul {
+  list-style: none;
+  padding: 0;
+}
+.act_list {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .act_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.act_card {
+  margin: 0 auto;
+  width: 100%;
+  height: 12rem;
+  padding: 0;
+}
+.act_card_outer01 {
+  background: url(https://user-images.githubusercontent.com/110567844/213015608-a655ef40-9234-4bf5-8be2-d2bb8f807ddb.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65% auto;
+  height: 100%;
+  background-size: cover;
+}
+.act_card_outer02 {
+  background: url(https://user-images.githubusercontent.com/110567844/212994533-714436a0-76bd-4bd3-8e37-96dff351327c.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65% auto;
+  height: 100%;
+  background-size: cover;
+}
+.act_card_outer03 {
+  background: url(https://user-images.githubusercontent.com/110567844/212994539-8e1bb4f8-0991-41d3-ae70-2ff820ff328a.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65% auto;
+  height: 100%;
+  background-size: cover;
+}
+.act_card_outer04 {
+  background: url(https://user-images.githubusercontent.com/110567844/212994548-f7bc74b3-d161-49cd-a67b-ab76083aa36b.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65% auto;
+  height: 100%;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .act_card {
+    height: 18rem;
+  }
+}
+.act_card_inner {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #fff;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .act_card_inner {
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  .act_card_inner:hover {
+    opacity: 1;
+  }
+}
+.act_card_inner_text {
+  width: 90%;
+  height: 90%;
+  border: 0.1rem solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.act_card_inner_text p {
+  color: rgb(255, 255, 255);
+  padding-bottom: 1rem;
+}
+
+.footer {
+  position: relative;
+  background-color: rgb(146, 200, 77);
+  margin-top: 5rem;
+  text-align: center;
+}
+.footer::before {
+  background-color: rgb(146, 200, 77);
+  content: "";
+  position: absolute;
+  display: block;
+  transform: translateY(-99%);
+  width: 100%;
+  height: 4rem;
+  clip-path: polygon(100% 100%, 0% 100%, 0% 74.04%, 1.54% 76.91%, 3.08% 79.66%, 4.62% 82.28%, 6.15% 84.74%, 7.69% 87.02%, 9.23% 89.13%, 10.77% 91.04%, 12.31% 92.74%, 13.85% 94.23%, 15.38% 95.48%, 16.92% 96.51%, 18.46% 97.29%, 20% 97.83%, 21.54% 98.13%, 23.08% 98.17%, 24.62% 97.96%, 26.15% 97.5%, 27.69% 96.8%, 29.23% 95.86%, 30.77% 94.68%, 32.31% 93.27%, 33.85% 91.64%, 35.38% 89.8%, 36.92% 87.76%, 38.46% 85.53%, 40% 83.13%, 41.54% 80.57%, 43.08% 77.86%, 44.62% 75.03%, 46.15% 72.08%, 47.69% 69.04%, 49.23% 65.92%, 50.77% 62.75%, 52.31% 59.54%, 53.85% 56.31%, 55.38% 53.08%, 56.92% 49.87%, 58.46% 46.69%, 60% 43.58%, 61.54% 40.54%, 63.08% 37.6%, 64.62% 34.77%, 66.15% 32.07%, 67.69% 29.51%, 69.23% 27.11%, 70.77% 24.89%, 72.31% 22.86%, 73.85% 21.03%, 75.38% 19.4%, 76.92% 18%, 78.46% 16.83%, 80% 15.9%, 81.54% 15.2%, 83.08% 14.76%, 84.62% 14.56%, 86.15% 14.61%, 87.69% 14.91%, 89.23% 15.46%, 90.77% 16.25%, 92.31% 17.28%, 93.85% 18.55%, 95.38% 20.04%, 96.92% 21.75%, 98.46% 23.67%, 100% 25.78%);
+}
+.footer h2 {
+  margin-bottom: 1rem;
+}
+.footer li {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    padding-top: 3rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.contact_about {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  text-align: start;
+}
+@media screen and (min-width: 768px) {
+  .contact_about {
+    width: 50%;
+    max-width: 15rem;
+  }
+}
+.contact_about i {
+  padding-right: 1rem;
+}
+.contact_form {
+  padding: 1rem 0;
+  width: 95%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .contact_form {
+    width: 50%;
+    max-width: 42rem;
+  }
+}
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 17rem;
+  margin: 0 auto;
+}
+.contact_form button {
+  color: black;
+  border-color: black;
+  width: 50%;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.adr {
+  display: flex;
+}
+
+.footer_social {
+  padding-top: 1rem;
+}
+.footer_social a {
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+  font-size: 2rem;
+}
+.footer_social a:hover {
+  display: inline-block;
+  transform: scale(1.3);
+}
+
+.copy {
+  color: white;
+  padding: 1rem;
 }
 
 body {
