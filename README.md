@@ -1,6 +1,6 @@
 # Landing Page for imaginary Outdoor company
 
-Simple, Full Responsive layout.
+Simple, Full Responsive layout.<br>
 <img width="500" alt="Screenshot 2023-01-18 at 4 13 07 PM" src="https://user-images.githubusercontent.com/110567844/213325622-70fc308e-358c-4dea-914b-70fe9afeb294.png">
 
 ## Demo
