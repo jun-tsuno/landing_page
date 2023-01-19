@@ -1,14 +1,19 @@
 // navigation
 const menuBtn = document.querySelector(".menu_btn");
 const nav = document.querySelector(".nav");
+const buttonOpen = document.querySelector(".menu_btn_open");
+const buttonClose = document.querySelector(".menu_btn_close");
 // fade-up
 const lagParent = document.querySelectorAll(".lagParent");
 const fadeUpChildren = document.querySelectorAll(".fade-up");
 // fade-in
 const fadeInChildren = document.querySelectorAll(".fade-in");
+console.log(buttonOpen);
 
 const toggleMenu = () => {
 	nav.classList.toggle("open");
+	buttonOpen.classList.toggle("active");
+	buttonClose.classList.toggle("active");
 };
 menuBtn.addEventListener("click", toggleMenu);
 

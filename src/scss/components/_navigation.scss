@@ -47,10 +47,18 @@
 
 	&_open {
 		opacity: 1;
+
+		&.active {
+			opacity: 0;
+		}
 	}
 
 	&_close {
 		opacity: 0;
+
+		&.active {
+			opacity: 1;
+		}
 	}
 }
 
